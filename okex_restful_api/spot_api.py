@@ -76,7 +76,7 @@ class SpotApi:
         """
         self.__assert_api_secret_key()
         param = build_api_sign(self.__api_key, self.__secret_key)
-        return http_post(self.__api.userinfom, param)
+        return http_post(self.__api.userinfo, param)
 
     def trade(self, symbol, type, **params):
         """
