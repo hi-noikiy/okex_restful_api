@@ -1,0 +1,12 @@
+future_price: [ticker, depth, trades, index, exchange_rate,
+              estimated_price, kline, hold_amount, price_limit]
+
+future_trade: [userinfo, position, trade, trades_history, batch_trade,
+               cancel, order_info, orders_info, userinfo_4fix, position_4fix,
+               explosive, devolve]
+
+spot_price: [ticker, depth, trades, kline]
+
+spot_trade: [userinfo, trade, batch_trade, cancel_order, order_info,
+             orders_info, order_history, withdraw, cancel_withdraw, withdraw_info,
+             account_records]
