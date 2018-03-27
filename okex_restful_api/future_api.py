@@ -223,8 +223,8 @@ class FutureApi:
         """
         self.__assert_api_secret_key()
         op_param = dict()
-        current_page = params.get('current_page')
-        page_length = params.get('page_length')
+        current_page = params.get('current_page',1)
+        page_length = params.get('page_length',50)
         if current_page:
             op_param['current_page'] = current_page
         if page_length:
