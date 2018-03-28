@@ -4,7 +4,7 @@
 @Date     :2018-03-16-10:29
 @Author   : Xin Zhang
 """
-
+import json
 import hashlib
 import traceback
 import time
@@ -51,7 +51,7 @@ def http_post(resource, params: dict):
     }
     try:
         resp = requests.post(resource, params=params, headers=headers)
-        return resp.text
+        return json.loads(resp.text)
     except BaseException:
         traceback.print_exc()
         return None
